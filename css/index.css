@@ -95,3 +95,60 @@ nav a::before{
 nav a:hover::before{
   width: 100%;
 }
+
+.main{
+  padding-top: 10%;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.text{
+    text-transform: lowercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 250px;
+    color: #212121;
+}
+
+.gradi{
+  	background: linear-gradient(to right, #9375d1 0%, #58b0de 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle{
+  padding: 20px;
+  color: rgba(50,50,50,.75);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+
+}
+
+.line-1{
+    position: relative;
+    top: 50%;
+    width: 800px;
+    margin: 0 auto;
+    border-right: 2px solid rgba(50,50,50,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 35px;
+    font-weight: 400;
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 2s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 545px;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(50,50,50,.75);}
+  to{border-right-color: transparent;}
+}
